@@ -81,6 +81,7 @@ def make_logger(log_dir: str = None, mode: str = "train") -> str:
 
         logger.addHandler(sh)
         logger.info("Hello! This is Joey-NMT (version %s).", version)
+        logger.info("You are using a modified version that uses an exclusively post-norm strategy.")
 
     return version
 
